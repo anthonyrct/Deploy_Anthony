@@ -19,7 +19,7 @@ FROM openjdk:17-jdk-slim
 EXPOSE 8000
 
 #Copie o arquivo JAR da etapa de compilação para o container de execução
-COPY --from=build /target/loja.jar app.jar
+COPY --from=build /target/Deploy_Anthony.jar app.jar
 
 #defina o comando de inicialização da aplicação
 ENTRYPOINT [ "java", "-jar", "app-jar" ]
