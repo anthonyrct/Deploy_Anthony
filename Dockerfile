@@ -1,10 +1,10 @@
 #estagio da compilação
-FROM ubuntu:lastest as build
+FROM ubuntu:latest as build
 
 #instale o OpneJDK 17
 RUN apt-get update
 RUN apt-get install openjdk-17-jdk -y
-RUN apt-get install mavn -y
+RUN apt-get install maven -y
 
 #copie o codigo-fonte para o container
 COPY . .
